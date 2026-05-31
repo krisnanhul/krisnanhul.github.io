@@ -703,3 +703,11 @@ footer a img {
     font-style: italic;
     opacity: 0.85;
 }
+
+/* The description area is hidden in Compact Mode; keep the interactive control rows visible there. */
+.compact .activity_table tr[data-special="timer"] .activity_desc,
+.compact .activity_table tr[data-special="rsphereinput"] .activity_desc,
+.compact .activity_table tr[data-special="rspheredisplay"] .activity_desc {
+    display: inline-block;
+    visibility: visible;
+}
